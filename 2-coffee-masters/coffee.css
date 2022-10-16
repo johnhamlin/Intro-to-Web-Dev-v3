@@ -2,22 +2,36 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  /* Settings pulled from stack overflow https://stackoverflow.com/questions/90178/make-a-div-fill-the-height-of-the-remaining-screen-space */
+  height: 100%;
+  margin: 0;
+}
+
 .page {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
   font-family: 'Open Sans', sans-serif;
   background-color: #412316;
 }
 
 /* Header Styles */
 .brand-head {
-  /* flex box */
+  flex: 0 1 auto;
+}
+
+.brand-head-flex {
+  /* flex box to center content*/
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
   /* box */
   width: 100%;
-  border: 1px solid black;
-  padding: 20px;
+  /* border: 1px solid black; */
+  padding: 15px;
 }
 
 .brand-logo {
@@ -29,3 +43,10 @@
 }
 
 /* Main Page Styles */
+.page-main {
+  flex: 1 1 auto;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #f0f0f0;
+  border: 1px solid black;
+}

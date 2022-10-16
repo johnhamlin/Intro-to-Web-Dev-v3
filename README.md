@@ -2,5 +2,5 @@
 My project files from the Frontend Masters Complete Into to Web Development class by Brian Holt
 
 ## Projects
-- [0 first html](./0-html-project/)
-- [newspaper](./1-newspaper-layout/)
+- [0 - first html](./0-html-project/)
+- [1 - newspaper](./1-newspaper-layout/)

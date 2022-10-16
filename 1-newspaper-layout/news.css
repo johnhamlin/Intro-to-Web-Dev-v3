@@ -1,3 +1,115 @@
 * {
   box-sizing: border-box;
 }
+
+/* Set three column grid for page class */
+.page {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'flag flag flag'
+    'nav nav nav'
+    'story1 story2 story3'
+    'story4 story5 story5';
+  background-color: black;
+  column-gap: 2px;
+  row-gap: 2px;
+  margin: 3em;
+}
+
+.brand-header {
+  grid-area: flag;
+  background-color: white;
+}
+
+.brand {
+  font-family: cursive;
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+/* nav */
+.nav-links {
+  grid-area: nav;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  /* border: 2px solid black; */
+  padding: 10px;
+  background-color: white;
+  /* black line on right and left */
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.site-section {
+  display: inline;
+  text-align: center;
+}
+
+.section-link {
+  color: gray;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: large;
+}
+
+.section-link:hover {
+  text-decoration: underline;
+}
+
+/* news stories */
+.story {
+  /* border: 1px solid black; */
+  padding: 10px;
+  /* border: 1px solid black; */
+  background-color: white;
+}
+
+.story-1 {
+  grid-area: story1;
+  margin-left: 2px;
+}
+
+.story-2 {
+  grid-area: story2;
+}
+
+.story-3 {
+  grid-area: story3;
+  margin-right: 2px;
+}
+
+.story-4 {
+  grid-area: story4;
+  margin-left: 2px;
+  margin-bottom: 2px;
+}
+
+.story-5 {
+  grid-area: story5;
+  margin-right: 2px;
+  margin-bottom: 2px;
+}
+
+.article-title {
+  font-size: 1.5em;
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 1em;
+}
+
+.article-text {
+  margin-bottom: 1em;
+}
+
+.article-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+  max-width: 60%;
+}
